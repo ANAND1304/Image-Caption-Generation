@@ -19,3 +19,5 @@ Edit src/App.js and add your API endpoint at line 20.
 - Real-time processing
 
 Built for Deep Learning Major Project.
+<img width="1427" height="969" alt="Screenshot 2025-12-17 004748" src="https://github.com/user-attachments/assets/2e2418d4-172a-4657-963a-761af2b32b72" />
+
