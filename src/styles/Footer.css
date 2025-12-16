@@ -1,0 +1,13 @@
+.footer {
+  background: linear-gradient(135deg, #1F2937, #111827);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+.footer p { margin-bottom: 8px; }
+.footer .tech {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
