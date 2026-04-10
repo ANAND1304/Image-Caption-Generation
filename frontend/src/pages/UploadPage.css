@@ -1,0 +1,167 @@
+
+.upload-page {
+  padding-top: 64px;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+.upload-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+.page-header { text-align: center; margin-bottom: 40px; }
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.page-sub { color: var(--text-secondary); font-size: 1rem; }
+.upload-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  min-height: 300px;
+}
+@media (max-width: 600px) {
+  .upload-card { padding: 24px 16px; }
+}
+/* Preview */
+.preview-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.preview-img-wrap {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--bg-secondary);
+}
+.preview-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.preview-remove {
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s;
+}
+.preview-remove:hover { background: var(--accent); }
+.preview-controls {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  width: 100%;
+}
+.settings-toggle {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.settings-toggle:hover { color: var(--text-primary); border-color: var(--border-hover); }
+.beam-control { position: relative; }
+.beam-panel {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%; transform: translateX(-50%);
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  min-width: 200px;
+  backdrop-filter: blur(20px);
+  z-index: 10;
+  text-align: center;
+}
+.beam-label { font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; color: var(--text-secondary); }
+.beam-options { display: flex; gap: 6px; justify-content: center; margin-bottom: 8px; }
+.beam-opt {
+  width: 32px; height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+.beam-opt:hover, .beam-opt.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.beam-hint { font-size: 0.72rem; color: var(--text-muted); }
+.generate-btn {
+  display: flex; align-items: center; gap: 8px;
+  padding: 14px 36px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 20px rgba(220,38,38,0.3);
+}
+.generate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(220,38,38,0.4); }
+.generate-icon { font-size: 1.1rem; }
+/* Error */
+.error-box {
+  text-align: center;
+  padding: 40px;
+}
+.error-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ef4444;
+  margin-bottom: 8px;
+}
+.error-msg { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; }
+.btn-reset {
+  padding: 8px 20px;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-sm);
+  color: var(--accent-light);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.btn-reset:hover { background: var(--accent); color: #fff; }
+.drop-another {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+.link-btn {
+  background: none; border: none;
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: inherit;
+}
+.link-btn:hover { text-decoration: underline; }

@@ -1,0 +1,62 @@
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 48px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  background: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+}
+.dropzone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-dim);
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+.dropzone:hover::before, .dropzone.drag-active::before { opacity: 1; }
+.dropzone:hover { border-color: var(--accent); }
+.dropzone.drag-active {
+  border-color: var(--accent);
+  transform: scale(1.01);
+}
+.dropzone.disabled { opacity: 0.5; cursor: not-allowed; pointer-events: none; }
+.dropzone-content { position: relative; z-index: 1; }
+.drop-icon {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-hover);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  color: var(--accent);
+  transition: transform 0.3s;
+}
+.drop-icon.bouncing { animation: bounce 0.6s infinite alternate; }
+@keyframes bounce { to { transform: translateY(-6px); } }
+.drop-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+.drop-sub { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px; }
+.drop-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+.dropzone:hover .drop-badge { border-color: var(--accent); color: var(--accent); }
