@@ -325,3 +325,11 @@ MIT License — free for personal and commercial use.
 - Flickr8k Dataset — University of Illinois
 - ResNet50 — Microsoft Research
 - Attention Mechanism — "Show, Attend and Tell" (Xu et al., 2015)
+- Website :- Images
+<img width="1904" height="1032" alt="Screenshot 2026-04-11 011543" src="https://github.com/user-attachments/assets/614dc881-db34-4c27-98ba-0455eabccfb4" />
+
+<img width="1897" height="1032" alt="Screenshot 2026-04-11 011602" src="https://github.com/user-attachments/assets/76d6d988-c2bd-4cca-99c2-c829103b60c0" />
+<img width="1900" height="1031" alt="Screenshot 2026-04-11 011644" src="https://github.com/user-attachments/assets/f502ab4c-98b4-4f38-86a7-53579b07f312" />
+<img width="1882" height="1026" alt="Screenshot 2026-04-11 011717" src="https://github.com/user-attachments/assets/a22e354e-cb63-4bb1-993f-5a89b73f2393" />
+
+
